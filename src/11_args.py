@@ -7,6 +7,7 @@
 # YOUR CODE HERE
 def f1(num1, num2):
     return num1 + num2
+
 print(f1(1, 2))
 
 # Write a function f2 that takes any number of integer arguments and prints the
@@ -17,6 +18,7 @@ def f2(*argv):
     for num in argv:
         return sum(argv)
 print(f2(1,))                    # Should print 1
+
 print(f2(1, 3))                 # Should print 4
 print(f2(1, 4, -12))            # Should print -7
 print(f2(7, 9, 1, 3, 4, 9, 0))  # Should print 33
@@ -54,6 +56,7 @@ def f4 (**kwargs):
 # key: b, value: 30
 
 f4(a=12, b=30)
+
 
 # Should print
 # key: city, value: Berkeley
