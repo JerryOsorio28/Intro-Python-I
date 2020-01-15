@@ -70,6 +70,5 @@ d = {
 f4(**d)
 
 # Things a learned...
-# Use *argv to target the arguments value.
-# Use **kwargs to access keyword arguments
-# Use **kwargs in your function AND when the function is declare to access key/value pairs objects.(line 70)
+# Use *argv to target the arguments value when we don't know how many arguments will be passed in.
+# Use **kwargs to access keyword arguments AND when the function is declare to access key/value pairs objects.(line 70)
