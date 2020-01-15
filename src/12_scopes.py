@@ -5,7 +5,8 @@
 x = 12
 
 def changeX():
-    x = 99
+    #the 'global' indicates that we want to search for a variable with the name 'x' that was declared in the global scope.
+    global x
 
 changeX()
 
@@ -19,6 +20,8 @@ def outer():
     y = 120
 
     def inner():
+        # the 'nonlocal' indicates that the declared variable that we want to use is the local one
+        nonlocal y
         y = 999
 
     inner()

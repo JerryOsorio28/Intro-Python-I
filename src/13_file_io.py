@@ -6,8 +6,10 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 """
 
 # Open up the "foo.txt" file (which already exists) for reading
+with open('foo.txt') as foo:
 # Print all the contents of the file, then close the file
-
+    read_data = foo.read()
+print(read_data)
 # YOUR CODE HERE
 
 # Open up a file called "bar.txt" (which doesn't exist yet) for
@@ -16,3 +18,14 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+with open('bar.txt', 'w') as bar:
+    message = bar.write("""
+    DAD: I was just listening to the radio on my way in to town, apparently an actress just killed herself.
+    MOM: Oh my! Who!? DAD: Uh, I can't remember... 
+    I think her name was Reese something? MOM: WITHERSPOON!!!!!??????? 
+    DAD: No, it was with a knife...
+    """)
+
+with open('bar.txt') as txt:
+    read_joke = txt.read()
+print(read_joke)
