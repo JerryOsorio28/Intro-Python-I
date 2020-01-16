@@ -12,4 +12,3 @@ def evenOrNot(num):
     else:
         print('Odd')
 evenOrNot(5)
-

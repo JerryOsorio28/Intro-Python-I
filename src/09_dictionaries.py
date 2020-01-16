@@ -51,3 +51,4 @@ waypoints[0]['lon'] = -130
 # YOUR CODE HERE
 for waypoint in waypoints:
     print(waypoint.values())
+
