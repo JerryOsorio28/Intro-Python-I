@@ -46,6 +46,8 @@ elif len(args) == 2:
 #If theres 2 arg, assume its the month and and year
 elif len(args) == 3:
 # print cal for that month and year
+  # sets month
   month = int(args[1])
+  # sets year
   year = int(args[2])
   tc.prmonth(year, month)  
