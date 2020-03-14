@@ -12,7 +12,7 @@ Use Python's slice syntax to achieve the following:
 a = [2, 4, 1, 7, 9, 6]
 
 # Output the second element: 4:
-print(a[1]) #The slice method do not have to be declared**
+print(a[1:2])
 
 
 # Output the second-to-last element: 9
@@ -28,7 +28,7 @@ print(a[2:4])
 print(a[1:])
 
 # Output every element except the last one: [2, 4, 1, 7, 9]
-print(a[0:5])
+print(a[:-1])
 
 # For string s...
 

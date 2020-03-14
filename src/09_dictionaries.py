@@ -2,8 +2,8 @@
 Dictionaries are Python's implementation of associative arrays.
 There's not much different with Python's version compared to what
 you'll find in other languages (though you can also initialize and
-populate dictionaries using comprehensions just like you can with 
-lists!). 
+populate dictionaries using comprehensions just like you can with
+lists!).
 
 The docs can be found here:
 https://docs.python.org/3/tutorial/datastructures.html#dictionaries
@@ -20,15 +20,15 @@ waypoints = [
         "lat": 43,
         "lon": -121,
         "name": "a place"
-    }, 
+    },
     {
         "lat": 41,
         "lon": -123,
         "name": "another place"
-    }, 
+    },
     {
-        "lat": 43,
-        "lon": -122,
+        "lat": 76,
+        "lon": -196,
         "name": "a third place"
     }
 ]
@@ -36,8 +36,8 @@ waypoints = [
 # Add a new waypoint to the list
 # YOUR CODE HERE
 waypoints.append({
-    "lat": 53,
-    "lon": -317,
+    "lat": 43,
+    "lon": -122,
     "name": "a fourth place"
 })
 
@@ -45,11 +45,10 @@ waypoints.append({
 # Modify the dictionary with name "a place" such that its longitude
 # value is -130 and change its name to "not a real place"
 # YOUR CODE HERE
-waypoints[0]["lat"] = -131
-waypoints[0]["name"] = "not a real place"
-print(waypoints)
-
+waypoints[0]['name'] = 'not a real place'
+waypoints[0]['lon'] = -130
 # Write a loop that prints out all the field values for all the waypoints
 # YOUR CODE HERE
-for i in waypoints:
-    print(i.values())
+for waypoint in waypoints:
+    print(waypoint.values())
+
